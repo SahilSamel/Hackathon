@@ -1,7 +1,9 @@
 /* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -19,7 +21,7 @@ html{
     display: flex;
     align-items: center;
     position: sticky;
-    top: 0px;
+    top: 0;
 }
 
 #navbar::before{
@@ -28,7 +30,7 @@ html{
     position: absolute;
     top:0px;
     left:0px;
-    height: 100%;
+    height: 5em;
     width:100%;
     z-index: -1;
     opacity: 0.7;
@@ -66,11 +68,14 @@ html{
 
 
 #navbar ul li a{
+    margin-top: 1.2em;
+    margin-left: 6.2em;
     color: white;
     display: block;
-    padding: 3px 22px;
+    padding: 3px 5.5em;
     border-radius: 20px;
     text-decoration: none;
+
 }
 
 #navbar ul li a:hover{
@@ -188,17 +193,15 @@ html{
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background: url('../contact.jpg') no-repeat center center/cover;
+    background: url('/contact1.jpg') no-repeat center center/cover;
 
 }
-
 #contact-box{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 34px;
 }
-
 #contact-box input, 
 #contact-box textarea{
     width: 100%;
@@ -214,15 +217,122 @@ html{
 #contact-box label{
    font-size: 1.3rem;
    font-family: 'Bree Serif', serif;
-   justify-content: center; 
+
 }
 
+#hm{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 15em;
+
+}
+
+.div ul {
+    margin: 0;
+}
+
+.div li {
+    display: inline;
+}
+
+.div a {
+    font-size: 1.7em;
+    display: inline-block;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: black;
+    background-color: white;
+    border: solid black;
+    border-radius: 0.5em;
+    font-weight: bold;
+}
+
+.btn_secondary{
+    padding: 6px 20px;
+    background-color: rgba(58, 66, 59, 0.466);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+/*.main-nav li {
+    padding: 0 5%;
+}*/
+
+.side-btn {
+    margin: 0 31em;
+    align-content: center;
+    text-align: center;
+    font-size: 1em;
+}
+
+.main-div {
+    text-align: center;
+    font-size: 2em;
+    /*ont-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)*/
+}
+
+.main-div li {
+    padding: 0 5%;
+}
+
+.content-section {
+    font-size: 1.5em;
+    margin-left: 20em;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    font-size: 4.7em;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    align-content: center;
+}
+
+.container {
+    max-width: 900px;
+    /* margin: ; */
+    padding: 0 1.5em;
+    margin-left: 15em;
+    /* margin-right: 0; */
+}
 
 /* Utility Classes */
 .h-primary{
-    font-family: 'Bree Serif', serif;
-    font-size: 3.8rem;
-    padding: 12px;
+    font-family:Roboto Condensed;
+    font-size: 4.5rem;
+    margin-top: 0em;
+    padding-top: 1em;
+    /*padding: 12px;*/
 }
 
 .h-secondary{
@@ -231,14 +341,16 @@ html{
     padding: 12px;
 }
 
-.btn{
+/*.btn{
     padding: 6px 20px;
-    background-color: rgba(77, 141, 91, 0.678);
-    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
     font-size: 1.5rem;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor:pointer;
-}
+}*/
 
 .center{
     text-align: center;
@@ -300,6 +412,49 @@ html{
     color: white;
 }
 
+.main-header {
+    padding-bottom: 30px;
+}
+
+.heading {
+    text-align: center;
+    margin: 2em;
+    font-size: 7em;
+    font-family: Roboto Condensed;
+    font-weight: normal;
+    color: black;
+}
+
+.map {    
+    margin: 0 28em;
+    display: inline-block;
+    padding: 12px;
+
+}
+
+.shop-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.shop-row:last-child{
+    border:none;
+}
+
+.content-section {
+    margin: 2em 4em;
+}
+
+.content-header {
+    font-family: Roboto Condensed;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*Towing*/
+
 #towing::before{
     content: "";
     position: absolute;
@@ -323,15 +478,15 @@ html{
 #towing h2{
     color:rgb(87, 67, 38);
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.7rem;
+    font-family: Roboto Condensed;
+    font-size: 4.5rem;
 }
 
 #towing p{
     color:rgb(87, 67, 38);
     text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    font-family: Roboto Condensed;
 }
 
 #towing_box{
@@ -368,6 +523,7 @@ html{
  
 }
 
+/*towing_bookingpg*/
 
 #towing_bookingpg::before{
     content: "";
@@ -381,11 +537,11 @@ html{
 #towing_bookingpg h2{
     color:black;
     text-align: center;
-    font-family: 'Bree Serif', serif;
+    font-family: Roboto Condensed;
     font-size: 2.0rem;
 }
 
-/*Mechanics */
+/*Services*/
 #mechanics::before{
     content: "";
     position: absolute;
@@ -409,15 +565,15 @@ html{
 #mechanics h2{
     color:rgba(87, 66, 10, 0.616);
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.7rem;
+    font-family:Roboto Condensed;
+    font-size: 5rem;
 }
 
 #mechanics p{
     color:rgb(87, 67, 38);
     text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Bree Serif', serif;
+    font-size: 2.1rem;
+    font-family: Roboto Condensed;
 }
 
 #mechanics_box{
@@ -450,7 +606,8 @@ html{
 
 #mechanics_box label{
     font-size: 1.3rem;
-    font-family: 'Bree Serif', serif;
+    font-family: Roboto Condensed;
  
 }
+
 

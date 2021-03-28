@@ -1,92 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Gears 24/7 | Tow Your Vehicle</title>
-	<link rel="stylesheet" href="/css/towing_style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gears 24/7 | Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="navbar">
-        <div id="logo">
-            <img src="logo.jpg" alt="">
-        </div>
-        <ul>
-            <li class="item"><a href="/homepage.html">Home</a></li>
-            <li class="item"><a href="/homepage.html#services-container">Services</a></li>
-            <li class="item"><a href="/homepage.html#client-section">Our Clients</a></li>
-            <li class="item"><a href="/homepage.html#contact">Contact Us</a></li>
-        </ul>
-    </nav>
+	<header class="main-header">
+        <nav id="navbar" class="main-nav">
+            <ul>
+                <li class="item"><a href="/homepage.html">Home</a></li>
+                <li class="item"><a href="/homepage.html#services-container">Services</a></li>
+                <li class="item"><a href="/homepage.html#client-section">Our Clients</a></li>
+                <li class="item"><a href="/homepage.html#contact">Contact Us</a></li>
+        
+            </ul>
+        </nav>
+    </header>
 
-	<section id="towing_bookingpg">
-		<h2 class="heading">Tow Your Vehicle</h2>
-		<div itemid="towing_bookingpg_map">
-		<iframe src="https://www.google.com/maps/d/embed?mid=1sXkLIigHeMQ11C7aei8Qqaxmuiuyu9f1" width="640" height="480" ></iframe>
-		</div>
-    	<div id="list_of_towingcentres">
+    <section>
+      <h2 class="heading">BOOK TOWING</section>
+
+    <section class="map"> 
+    	<iframe src="https://www.google.com/maps/d/embed?mid=1sXkLIigHeMQ11C7aei8Qqaxmuiuyu9f1" width="1000" height="600"></iframe>
+    </section>
+
+    <section>
+    	<div>
     		<ul>
-    			<li class="towing_centres">
-    				<b>All India Towing</b><br>
+    			<div class="content-section shop-row">
+    				<h4 class="content-header"><b>All India Towing</b></h4><br>
     			    <span>Location: Andheri - Kurla Rd, Nehru Nagar, Kadam Wadi, Bhim Nagar, Andheri East, Mumbai, Maharashtra 400059</span><br>
-    			    <span>Distance From Current Location: 4.0 km       Hours Open: 9am-9pm</span><br>
-    			    <span>Website:www.allindiatowingservices.com       Phone Number: +91 81696 25025      Rating:3.8</span><br>
-				</li>
-				<li class="towing_centres">
-    				<b>Suraj Towing</b><br>
+    			    <span>Distance From Current Location: 4.0 km       </span><br>
+                    <span>Hours Open: 9am-9pm</span><br>
+    			    <span>Website:www.allindiatowingservices.com    </span><br>
+                    <span>Phone Number: +91 81696 25025 </span><br>
+                    <span>Rating:3.8</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
+                <div class="content-section shop-row">
+    				<h4 class="content-header"><b>Suraj Towing</b></h4><br>
     			    <span>Location: Hiranadani Hospital I.I.T Main gate, BSNL Colony, Powai, Mumbai, Maharashtra 400076</span><br>
-    			    <span>Distance From Current Location: 3.9 km       Hours Open: 24 hours</span><br>
-    			    <span>http:suraj-towing.business.site       Phone Number: +91 98196 58143      Rating:4.7</span><br>
-    			</li>
-    			<li class="towing_centres">
-    				<b>Sun Raj Towing</b><br>
+    			    <span>Distance From Current Location: 3.9 km</span><br>
+                    <span>Hours Open: 24 hours</span><br>
+    			    <span>hhttp:suraj-towing.business.site</span><br>
+                    <span>Phone Number: +91 98196 58143</span><br>
+                    <span>Rating:4.7</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
+    			<div class="content-section shop-row">
+    				<h4 class="content-header"><b>Sun Raj Towing</b></h4><br>
     			    <span>Location: Shop mo. 6 , Near Hiranadani Hospital powai 400076, opp. iit main gate, Hiranandani Gardens, Powai, Mumbai, Maharashtra 400076</span><br>
-    			    <span>Distance From Current Location: 3.1 km       Hours Open: 24 hours</span><br>
-    			    <span>Website:N/A       Phone Number: +91 98332 82772       Rating:3.2</span><br>
-				</li>
-    			<li class="towing_centres">
-    				<b>24/7 Car towing services</b><br>
+    			    <span>Distance From Current Location: 3.1 km </span><br>
+                    <span>Hours Open: 24 hours</span><br>
+    			    <span>Website:N/A</span><br>
+                    <span>Phone Number: +91 98332 82772 </span><br>
+                    <span> Rating:3.2</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
+    			<div class="content-section shop-row">
+    				<h4 class="content-header"><b>24/7 Car towing services</b></h4><br>
     			    <span>Location: Om Sai Darshan bldg shop no 2, Shanti Nagar, D.N.Nagar, Andheri West, Mumbai, Maharashtra 400058</span><br>
-    			    <span>Distance From Current Location: 9.7 km       Hours Open: 24 hours</span><br>
-    			    <span>Website:moderntowing.in       Phone Number: :+91 98208 49090       Rating:3.6/span><br>
-				</li>
-    			<li class="towing_centres">
-    				<b>GoMechanic - Car Towing Service</b><br>
+    			    <span>Distance From Current Location: 9.7 km</span><br>
+                    <span>Hours Open: 24 hours</span><br>
+    			    <span>Website:moderntowing.in</span><br>
+                    <span>Phone Number: :+91 98208 49090</span><br>
+                    <span>Rating:3.4</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
+    			<div class="content-section shop-row">
+    				<h4 class="content-header"><b>GoMechanic - Car Towing Service</b></h4><br>
     			    <span>Location: Bandra Highway Bandra Traffic Chowky, Near, Worli Sea Face, Jogeshwari West, Mumbai, Maharashtra 400050</span><br>
-    			    <span>Distance From Current Location: 1.2 km       Hours Open: 9am–9pm</span><br>
-    			    <span>Website:gomechanic.app.link       Phone Number: +91 83989 70970       Rating:3.3</span><br>
-				</li>
-    			<li class="towing_centres">
-    				<b>R & R Towing Service</b><br>
+    			    <span>Distance From Current Location: 1.2 km </span><br>
+                    <span>Hours Open: 9am–9pm</span><br>
+    			    <span>Website:gomechanic.app.link</span>
+                    <span>Phone Number: +91 83989 70970</span><br>
+                    <span>Rating:4.1</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
+    			<div class="content-section shop-row">
+    				<h4 class="content-header"><b>R & R Towing Service</b></h4><br>
     			    <span>Location: Swami Vivekananda Rd, Near Bandra traffic police chowky, C Block BKC, Bandra West, Mumbai, Maharashtra 400050</span><br>
-    			    <span>Distance From Current Location: 13.9 km       Hours Open: 24 hours</span><br>
-    			    <span>Website:N/A       Phone Number: +91 75060 99487      Rating:4.6</span><br>
-				</li>
-    			<li class="towing_centres">
-    				<b>A.A Break Down Towing Service</b><br>
+    			    <span>Distance From Current Location: 13.9 km </span><br>
+                    <span>Hours Open: 24 hours</span><br>
+    			    <span>Website:N/A</span>
+                    <span>Phone Number: +91 75060 99487</span><br>
+                    <span>Rating:4.6</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
+    			<div class="content-section shop-row">
+    				<h4 class="content-header"><b>A.A Break Down Towing Service</b></h4><br>
     			    <span>Location: Near Deshpande Hospital Lbs Marg Kurla ( w ), Kapadia Nagar, Kurla, Mumbai, Maharashtra 400070</span><br>
-    			    <span>Distance From Current Location: 5.6 km       Hours Open: 24 hours</span><br>
-    			    <span>Website:hmtowingservice.in       Phone Number: +91 98200 00507       Rating:4.3</span><br>
-				</li>
-    			<li class="towing_centres">
-    				<b>Fast towing</b><br>
+    			    <span>Distance From Current Location: 5.6 km</span><br>
+                    <span>Hours Open: 24 hours</span><br>
+    			    <span>Website:hmtowingservice.in</span>
+                    <span>Phone Number: +91 98200 00507</span><br>
+                    <span>Rating:4.3</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
+    			<div class="content-section shop-row">
+    				<h4 class="content-header"><b>Fast towing</b></h4><br>
     			    <span>Location: 1501 new krishna vihar, Swami Vivekananda Rd, New Sarvottam Society, Azad Nagar, Andheri West, Mumbai, Maharashtra 400058</span><br>
-    			    <span>Distance From Current Location: 7.6 km       Hours Open:24 hours</span><br>
-    			    <span>Website:fast-towing-towing-service.business.site       Phone Number:+91 98209 03555       Rating:4.6</span><br>
-				</li>
-    			<li class="towing_centres">
-    				<b>towing service 24 hours</b><br>
+    			    <span>Distance From Current Location: 7.6 km</span><br>
+                    <span>Hours Open:24 hours</span><br>
+    			    <span>Website:fast-towing-towing-service.business.site</span>
+                    <span>Phone Number:+91 98209 03555</span><br>
+                    <span>Rating:4.6</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
+    			<div class="content-section shop-row">
+    				<h4 class="content-header"><b>towing service 24 hours</b></h4><br>
     			    <span>Location: CD Barfiwala Road, Junaid Nagar, Azad Nagar, Andheri West, Mumbai, Maharashtra 400058</span><br>
-    			    <span>Distance From Current Location: 7.7 km       Hours Open:24 hours</span><br>
-    			    <span>Website:N/A       Phone Number:+91 91367 55636      Rating:4.5</span><br>
-				</li>
-    			<li class="towing_centres">
-    				<b>Tow My Wheels</b><br>
+    			    <span>Distance From Current Location: 7.7 km</span><br>
+                    <span>Hours Open:24 hours</span><br>
+    			    <span>Website:N/A</span>
+                    <span>Phone Number:+91 91367 55636</span><br>
+                    <span>Rating:4.5</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
+    			<div class="content-section shop-row">
+    				<h4 class="content-header"><b>Tow My Wheels</b></h4><br>
     			    <span>Location: Shop no 6, Soloman Building, BSNL Colony, Powai, Mumbai, Maharashtra 400076</span><br>
-    			    <span>Distance From Current Location: 3.9 km       Hours Open: 24 hours</span><br>
-    			    <span>Website:towmywheels.com       Phone Number:+91 97685 35222       Rating:3.7</span><br>
-				</li>
+    			    <span>Distance From Current Location: 3.9 km </span><br>
+                    <span>Hours Open: 24 hours</span><br>
+    			    <span>Website:towmywheels.com</span>
+                    <span>Phone Number:+91 97685 35222</span><br>
+                    <span>Rating:3.7</span><br>
+                    <button type="button" class="div side-btn btn btn-primary" onclick="towing_submit()">Request towing</button>
+    			</div>
     		</ul>
     	</div>
     </section>
+
+	<script>
+		function towing_submit(){
+			alert("Your request has been accepted")
+		}
+	</script>
         
 	<footer class="main-footer">
             <div class="container main-footer-container">
@@ -104,7 +159,7 @@
                     </li>
                     <li>
                         <a href="https://www.facebook.com" target="_blank">
-                            <img src="Images/Facebook Logo.jpeg" width="50" height="50">
+                            <img src="Images/Facebook Logo.jpeg" width="60" height="60">
                         </a>
                     </li>
                 </ul>
